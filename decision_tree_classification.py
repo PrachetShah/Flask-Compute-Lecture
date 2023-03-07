@@ -29,10 +29,5 @@ class Decision:
         val = [age, salary]
         print(f"Predicted value for {val} -> ", classifier.predict(sc.transform([val])))
 
-        # # Making the Confusion Matrix
-        # from sklearn.metrics import confusion_matrix, accuracy_score
-        # cm = confusion_matrix(y_test, y_pred)
-        # print(cm)
-        # print(accuracy_score(y_test, y_pred))
         prediction = classifier.predict(sc.transform([val]))
         return prediction
